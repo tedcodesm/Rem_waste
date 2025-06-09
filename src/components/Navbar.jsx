@@ -30,19 +30,17 @@ const Navbar = () => {
 
   return (
     <div className="bg-black text-white w-full p-4">
-      {/* Header / Toggle */}
-      <div className="flex justify-between items-center sm:hidden">
+      <div className="flex justify-between items-center md:hidden">
         <h1 className="text-xl font-bold">Rem Waste</h1>
         <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
-      {/* Nav Links */}
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } sm:flex flex-col sm:flex-row flex-wrap justify-between items-start sm:items-center gap-6 sm:gap-0 text-lg font-semibold mt-4 sm:mt-0`}
+        } md:flex flex-col md:flex-row flex-wrap justify-between items-start md:items-center gap-6 md:gap-0 text-lg font-semibold mt-4 md:mt-0`}
       >
         {steps.map((step, index) => {
           const Icon = step.icon;
@@ -61,7 +59,7 @@ const Navbar = () => {
               <Link
                 to={step.path}
                 className={`${colorClass} ${hoverColor} transition-colors`}
-                onClick={() => setIsOpen(false)} // close on link click
+                onClick={() => setIsOpen(false)} 
               >
                 {step.label}
               </Link>
