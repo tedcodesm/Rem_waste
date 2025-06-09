@@ -56,6 +56,11 @@ const TargetPage = () => {
               <p className="font-semibold text-gray-600 text-sm  text-center">
                 {skip.hire_period_days} days hire period
               </p>
+              {!skip.allowed_on_road && (
+                <p className="text-red-500 bg-gray-700 bg-opacity-50 font-semibold  px-4 rounded-full text-center text-sm mt-1">
+                  Not allowed on roads
+                </p>
+              )}
               <div className="flex flex-row justify-between items-center w-full mt-3">
                 <p className="text-lime-400 font-semibold font-serif group-hover:text-gray-800">
                   £{skip.price_before_vat}

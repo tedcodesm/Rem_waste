@@ -14,7 +14,7 @@ import { Link, useLocation } from "react-router-dom";
 const steps = [
   { path: "/postcode", label: "PostCode", icon: MapPin },
   { path: "/waste-type", label: "Waste Type", icon: Trash2 },
-  { path: "/select-skip", label: "Select Skip", icon: TractorIcon },
+  { path: "/skip", label: "Select Skip", icon: TractorIcon },
   { path: "/permit-check", label: "Permit Check", icon: UserCheckIcon },
   { path: "/choose-date", label: "Choose Date", icon: CalendarIcon },
   { path: "/payment", label: "Payment", icon: Calculator },
